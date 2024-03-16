@@ -7,6 +7,8 @@ import { Metadata, Viewport } from "next";
 import React from "react";
 import "./globals.css";
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Poet",
   description: "Poet is a poetry website.",

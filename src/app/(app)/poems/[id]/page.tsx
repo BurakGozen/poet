@@ -9,7 +9,7 @@ export default async function PoemPage({ params }: PageProps) {
 
   const payload = await getPayload({ config: configPromise });
 
-  const poem = await payload.findByID({ id, collection: "poems" as any });
+  const poem = await payload.findByID({ id, collection: "poems" });
   if (!poem) notFound();
 
   const { title, body_html } = poem;
@@ -20,7 +20,7 @@ export default async function PoemPage({ params }: PageProps) {
         {title && <h1 className="text-md -ml-4 mb-2 font-serif font-bold">{title}</h1>}
         <p
           className="-ml-4 shrink-0 whitespace-pre text-wrap border-l pl-4 *:min-h-3.5"
-          dangerouslySetInnerHTML={{ __html: body_html }}
+          dangerouslySetInnerHTML={{ __html: body_html || "" }}
         />
       </article>
     </div>

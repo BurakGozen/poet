@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -10,8 +10,12 @@ export default function HomePage() {
           Let&apos;s have a look
         </Link>
       </p>
+    </main>
+  );
+}
 
-      {/* 
+{
+  /* 
       <ul className="flex flex-col gap-8 px-10">
         {paths.map(({ label, href }, index) => (
           <li key={index}>
@@ -23,7 +27,5 @@ export default function HomePage() {
             </Link>
           </li>
         ))}
-      </ul> */}
-    </main>
-  )
+      </ul> */
 }
