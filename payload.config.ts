@@ -21,13 +21,6 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URL || "",
     },
   }),
-  admin: {
-    autoLogin: {
-      email: "burak@newcode.be",
-      password: "NewCode123",
-      prefillOnly: true,
-    },
-  },
   async onInit(payload) {
     const existingUsers = await payload.find({
       collection: "users",
