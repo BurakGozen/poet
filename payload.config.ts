@@ -31,8 +31,8 @@ export default buildConfig({
       await payload.create({
         collection: "users",
         data: {
-          email: "burak@newcode.be",
-          password: "NewCode123",
+          email: "info@newcode.be",
+          password: "1234",
         },
       });
     }
