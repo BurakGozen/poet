@@ -4,32 +4,31 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --port 1080",
-    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
-    "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
-    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
-    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint"
+    "dev": "next dev -p 1080 --turbo",
+    "devsafe": "rm -rf .next && next dev",
+    "build": "next build",
+    "payload": "payload",
+    "start": "next start",
+    "lint": "next lint"
   },
   "engines": {
     "node": ">=18.19.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.48",
-    "@payloadcms/db-postgres": "3.0.0-alpha.48",
-    "@payloadcms/next": "3.0.0-alpha.48",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.48",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.48",
+    "@payloadcms/db-postgres": "3.0.0-alpha.55",
+    "@payloadcms/next": "3.0.0-alpha.55",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.55",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.55",
+    "@payloadcms/ui": "3.0.0-alpha.55",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "cross-env": "^7.0.3",
     "framer-motion": "^11.0.14",
     "lucide-react": "^0.358.0",
-    "next": "14.2.0-canary.7",
+    "next": "14.2.0-canary.23",
     "next-themes": "^0.3.0",
-    "payload": "3.0.0-alpha.48",
+    "payload": "3.0.0-alpha.55",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.1.0",
@@ -48,6 +47,5 @@
     "tailwindcss": "^3.4.1",
     "tsx": "^4.7.1",
     "typescript": "^5.4.2"
-  },
-  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
+  }
 }
