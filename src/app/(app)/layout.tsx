@@ -3,6 +3,7 @@ import { Footer } from "@/components/navigation/footer";
 import { Navigation } from "@/components/navigation/navigation";
 import { cn } from "@/lib/utils/classnames";
 import { fontSans, fontSerif } from "@/lib/utils/fonts";
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata, Viewport } from "next";
 import React from "react";
 import "./globals.css";
@@ -36,6 +37,8 @@ export default function PagesLayout({ children }: { children: React.ReactNode })
           {children}
           <Footer />
         </Providers>
+
+        <Analytics  />
       </body>
     </html>
   );
